@@ -11,7 +11,7 @@
     <header>
       <h1>Тоог таа!</h1>
       <p class="between">(1 ээс 20 хооронд)</p>
-      <button class="btn again">Шинээр эхлэх!</button>
+      <button class="btn again" onclick="ResetGame()">Шинээр эхлэх!</button>
       <div class="number">?</div>
     </header>
     <main>
@@ -27,45 +27,8 @@
         </p>
       </section>
     </main>
-    <script>
-      n = 13;
-      function CheckNum(){
-        let scoreEl = document.getElementsByClassName('score')[0];
-        let score = Number(scoreEl.innerHTML) 
-        const Val = document.getElementsByTagName('input')[0];
-        const InpVal = Number(Val.value);
-        const messageEl = document.getElementsByClassName('message')[0];
-        if (isNaN(InpVal)){
-          messageEl.innerHTML = 'Тоо оруулна уу!'
-        } 
-        else{
-          if (InpVal > n)
-         {
-           if(score - 1 === 0){
-             afterLose();
-           }else 
-             messageEl.innerHTML = 'Их байна';
-             
-            }
-            scoreEl.innerHTML = score - 1; 
-        
-
-          }
-          else if (InpVal < n)
-          {
-            messageEl.innerHTML = 'Бага байна';
-            scoreEl.innerHTML = score - 1; 
-          }
-          else 
-          {
-            messageEl.innerHTML = 'Зөв таалаа';
-            document.body.style.backgroundColor = 'coral'
-          }
-        
-        }
-        function afterLose(){
-          messageEl.innerHTML = 'Та хожигдлоо';
-        }
+    <script src="js/script.js">
+     
     </script>
   </body>
 </html>
