@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+</head>
+<body>
+    <form>
+        <select name="" id="colorSelect">
+        <option class="childItem">Red</option>
+        <option class="childItem">Green</option>
+        <option class="childItem">White</option>
+        <option class="childItem">Black</option>
+    </select>
+    <input onclick="DeleteItem()" type="button" value="Select and Remove">
+    </form>
+    <script>
+        // let item = document.getElementById('colorSelect')
+        // let itemLen = item.length;
+        // let child = document.getElementsByClassName('childItem')
+        function DeleteItem(){
+            const list = document.getElementById('colorSelect');
+            for(let i = 0; i< list.length; i++){
+                if(list.option[i].childItem == list[i]){
+                    list.remove(i)
+                }
+            }
+            // if (list.hasChildNodes()) {
+            //  list.removeChild(list.children[0]);
+            // }
+        }
+
+    </script>
+</body>
+</html>

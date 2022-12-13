@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set bgColor</title>
+</head>
+<body>
+    <button onclick="ChangeColor()" class="btn">Click to set background color</button>
+    <p class="btn-change">Click to set  background color</p>
+    <p class="btn-change">Click to change  background color</p>
+    <script>
+        let buttonC = document.getElementsByClassName('btn')[0];
+        let BgChangeBtn = document.getElementsByClassName('btn-change');
+        colors =['yellow', '#CB1C8D', '#439A97', '#82C3EC', '#FF597B', '#FF7000', '#00E7FF', '#F7A4A4', '#FF6464', '#FFD384'];
+        let colorsLen = colors.length;
+        
+        function ChangeColor(){
+            let randomPicker = Math.floor(Math.random() * 11)
+            BgChangeBtn[0].style.backgroundColor = colors[randomPicker]; 
+            BgChangeBtn[1].style.backgroundColor = colors[randomPicker + 1]; 
+        }
+    </script>  
+</body>
+</html>
