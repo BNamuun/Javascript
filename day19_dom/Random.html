@@ -7,17 +7,15 @@
     <title>Random</title>
 </head>
 <body>
-    <button id="btn"> Random color generator </button>
+    <button id="btn" onclick="RandomChange()"> Random color generator </button>
     <script>
         let color = ['#4A3933', '#BA94D1', '#FAAB78', '#10A19D', '#A555EC', '#FFE162', '#00D7FF', '#4D77FF', '#FFD36E', '#9FB4FF']
-        let randomNum = Math.floor(Math.random() * 11);
-        // for(let i = 0 ; i < 11; i++){
-        //     if(color[randomNum] == 0){
-                let button = document.getElementById('btn');
-                button.style.backgroundColor = color[randomNum]
-            // }
-            // button.addEventListener('click', changeBackgroundColor);
-        // }
+        function RandomChange(){
+                    let randomNum = Math.floor(Math.random() * 11);
+                    let button = document.getElementById('btn');
+                    document.body.style.backgroundColor = color[randomNum];
+                }
+
     </script>
 </body>
 </html>

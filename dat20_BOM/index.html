@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>BOM</h1>
+
+    <button onclick="openWindow()"> Open window</button>
+    <button onclick="ConfirmDelete()">Confirm</button>
+    <button onclick="TimeSetOut2()"> TimeSetOut2</button>
+    <script>
+        function openWindow(){
+            window.open('https://classroom.google.com/w/NTA0NzAxMjcxNTQ1/t/all', 'New Window Bom', 'height = 600, width = 400, left = 600, top = 300')
+        }
+        function ConfirmDelete() {
+            const result = confirm('Delete?');
+            if(result){
+                alert('Deleted')
+            }
+        }
+        function TimeSetOut2(){
+            setTimeout(openWindow, 2 * 1000)
+        }
+    </script>
+</body>
+</html>
