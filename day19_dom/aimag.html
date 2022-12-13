@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimag</title>
+</head>
+<body>
+    <ul id="aimagNames">
+
+        <li id="aimag-101">Архангай</li>
+    
+        <li id="aimag-202">Баян-Өлгий</li>
+    
+        <li id="aimag-103">Баянхонгор</li>
+    
+        <li id="aimag-104">Булган</li>
+    
+        <li id="aimag-205">Говь-Алтай</li>
+    
+        <li id="aimag-406">Говьсүмбэр</li>
+    
+        <li id="aimag-407">Дархан-Уул</li>
+    
+        <li id="aimag-408">Дорноговь</li>
+    
+        <li id="aimag-309">Дорнод</li>
+    
+        <li id="aimag-410">Дундговь</li>
+    
+        <li id="aimag-211">Завхан</li>
+    
+        <li id="aimag-112">Орхон</li>
+    
+        <li id="aimag-113">Өвөрхангай</li>
+    
+        <li id="aimag-414">Өмнөговь</li>
+    
+        <li id="aimag-315">Сүхбаатар</li>
+    
+        <li id="aimag-416">Сэлэнгэ</li>
+    
+        <li id="aimag-417">Төв</li>
+    
+        <li id="aimag-218">Увс</li>
+    
+        <li id="aimag-219">Ховд</li>
+    
+        <li id="aimag-120">Хөвсгөл</li>
+    
+        <li id="aimag-321">Хэнтий</li>
+    
+        <li id="aimag-522">Улаанбаатар</li>
+    
+      </ul>
+
+
+      <script>
+        console.log(document.querySelectorAll('ul li')[0]);
+        let aimagLen = document.querySelectorAll("ul li").length;
+        console.log(document.querySelectorAll('ul li')[aimagLen - 1]);
+        console.log(document.getElementById("aimag-315"));
+        let list = document.querySelectorAll('ul li');
+        console.log(list[0].id); 
+        console.log((list[0].id)[6]); 
+      // Тухайн жагсаалтын элементүүдэд загвар оруулах (текстийн фонт, хэмжээ, текстийн өнгө, хүрээ, padding, margin)
+     for(let i = 0; i< aimagLen; i++){
+        let font = list[i].style.fontSize = '2rem'
+        let textColor = list[i].style.color = 'black'
+        // list[i].style.backgroundColor = '#251B37'
+        let pad = list[i].style.padding = '1rem'
+        let marg = list[i].style.margin = '1.5rem'
+        let cen = list[i].style.textAlign = 'center'
+        list[i].style.listStyle = 'none'
+        list[i].style.border = '1px solid black'
+        if((list[i].id)[6] == 1){
+           list[i].style.backgroundColor = 'yellow'
+        }
+        else if((list[i].id)[6] == 2){
+          list[i].style.backgroundColor = '#16697A'
+        }
+        else if((list[i].id)[6] == 3){
+          list[i].style.backgroundColor = '#FAF4F4'
+        }
+        else if((list[i].id)[6] == 4){
+          list[i].style.backgroundColor = '#AEE6E6'
+        }
+        else {
+          list[i].style.backgroundColor = '#FFAEC0'
+        }
+     } 
+      </script>
+
+
+</body>
+</html>

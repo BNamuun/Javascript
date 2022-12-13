@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+    <h1>DOM</h1>
+    <h1>Green</h1>
+    <div id="HelloText"></div>
+    <div id="nextId">
+
+    </div>
+    <div class="book">
+
+    </div>
+    <div class="book show"></div>
+    <ul>
+        <li>nom</li>
+        <li>green</li>
+        <li>red</li>
+        <li>bom</li>
+        <li>dom</li>
+    </ul>
+    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-landscape-1648265299.jpg?crop=0.676xw:1.00xh;0.148xw,0&resize=640:*" alt="nature">
+    <div id="DatePart">
+
+    </div>
+    <script>
+        document.getElementById("HelloText").innerHTML = "<strong>camelCase</strong>"
+        const El = document.getElementById('nextId')
+        El.innerHTML = "december 12"
+        console.log(El);
+        El.style.color = 'coral'
+        El.style.backgroundColor = 'black'
+
+        const Book_elements = document.getElementsByClassName('book')
+        console.log(Book_elements[1]);
+
+        const querySel =  document.querySelector('ul li')
+        console.log(querySel);
+        querySel.style.backgroundColor = 'green'
+        const querySelAll = document.querySelectorAll('ul li')
+        console.log(querySelAll);
+        querySelAll[1].style.backgroundColor = 'aqua'
+        querySelAll[3].style.textAlign = 'center'
+        querySelAll[4].style.border = '2px solid black'
+        querySelAll[0].style.listStyle = 'none'
+
+        const h1El = document.getElementsByTagName("h1")
+        console.log(h1El);
+        h1El[1].style.backgroundColor = 'coral'
+        const Img1 = document.getElementsByTagName('img')[0]
+        Img1.src = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+        Img1.style.width = '100%'
+
+        // const DateNow = new Date();
+        const DateID = document.getElementById("DatePart");
+        DateID.innerHTML = 'Current Date: ' + new Date();
+ 
+        const newDiv = document.createElement("h2")
+        const newContent = document.createTextNode("Break time");
+        newDiv.appendChild(newContent);
+        console.log(newDiv);
+        newDiv.style.backgroundColor = "green"
+    </script>
+</body>
+</html>
