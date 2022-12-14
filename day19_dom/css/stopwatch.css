@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #439A97;
+}
+.container .stopWatchPart .hours{
+    background-color: white;
+    padding: 20px;
+    font-size: 4.3rem;
+    border-radius: 6px;
+    box-shadow: 10px 10px 20px rgba(#263159, .3);
+    font-weight: 500;
+}
+.ms{
+    color: #472183;
+}
+.btns{
+    text-align: center;
+    margin: 10px;
+}
+.btn{
+    padding: 20px 30px;
+    outline: none;
+    font-size: 30px;
+    color: #1C315E;
+    cursor: pointer;
+    border-radius: 6px solid #472183;
+}
