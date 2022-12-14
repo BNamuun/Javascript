@@ -17,19 +17,15 @@
     <input onclick="DeleteItem()" type="button" value="Select and Remove">
     </form>
     <script>
-        // let item = document.getElementById('colorSelect')
-        // let itemLen = item.length;
-        // let child = document.getElementsByClassName('childItem')
         function DeleteItem(){
             const list = document.getElementById('colorSelect');
-            for(let i = 0; i< list.length; i++){
-                if(list.option[i].childItem == list[i]){
-                    list.remove(i)
-                }
+            list.remove(list.selectedIndex)
+            let alertTxt =" No of items : " 
+            alertTxt += list.length
+            for( let i = 0; i< list.length; i++){
+                alertTxt = alertTxt + '\n' + list[i].innerHTML
             }
-            // if (list.hasChildNodes()) {
-            //  list.removeChild(list.children[0]);
-            // }
+            alert(alertTxt)
         }
 
     </script>
