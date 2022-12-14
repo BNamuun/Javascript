@@ -11,13 +11,13 @@
         <h1 class="text-primary mb-3">Todo List App</h1>
         <p class="text-secondary">Он сар өдөр</p>
         <div class="input-group mb-3">
-            <input type="text"  id="Input" class="form-control border-bottom border-warning border-0" placeholder="Таксын нэрээ оруулна уу" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <input type="text"  id="Input" class="form-control border-bottom border-warning border-0" placeholder="Таскын нэрээ оруулна уу" aria-label="Recipient's username" aria-describedby="button-addon2">
             <button class="btn btn-outline-secondary bg-warning border-warning text-white" type="button" id="button-addon2" onclick="Addlist()">+ нэмэх</button>
         </div>
         <template id="TemplateThing"> 
             <div class="card mb-3">
                 <div class="input-group">
-                    <div class="card-body">
+                    <div id="card-body-input" class="card-body">
                       
                     </div>
                     <button class="btn btn-outline-secondary bg-primary text-white" type="button">Fix  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
@@ -37,7 +37,7 @@
         </template>
         <h1 class="text-primary">Жагсаалт</h1>
         <div class="lists">
-            <div class="card mb-3">
+            <!-- <div class="card mb-3">
               <div class="input-group">
                   <div class="card-body">
                     
@@ -55,7 +55,7 @@
                       <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
                     </svg></button>
                 </div>
-            </div>
+            </div> -->
       </div>
         </div>
     
@@ -68,16 +68,20 @@
                 const Newdiv = document.getElementById('TemplateThing').content.cloneNode(true);
 
                 // Newdiv.getElementsByClassName("card-body").innerHTML = inputLi;
-                // console.log(Newdiv.getElementsByClassName("card-body"));
+                // console.log(Newdiv);
                 let listEl = document.getElementsByClassName('lists')[0]
-                let newDiv1 = listEl.append(Newdiv);
+                let newDiv1 = listEl.appendChild(Newdiv);
+                let inputCard = document.getElementsByClassName('card-body');
+                console.log(inputcard);
+                inputCard.innerHTML = inputLi;
 
 
                 // let cardbody = Newdiv.getElementsByClassName('card-body');
+                // console.log(cardbody);
                 
 
 
-                console.log(newDiv);
+                // console.log(newDiv);
                 // newDiv1.innerHTML = inputLi;
                 
             }
