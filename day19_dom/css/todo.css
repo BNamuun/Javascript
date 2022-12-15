@@ -11,10 +11,8 @@ body{
 }
 .done{
     opacity: 0.5;
-    /* text-decoration: line-through; */
 }
 .done .input-group .taskField{
-    /* opacity: 0.5; */
     text-decoration: line-through;
 }
 .editing {
