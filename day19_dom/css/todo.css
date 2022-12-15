@@ -1,9 +1,13 @@
 .bg-bisque{
-    background-color: bisque;
+    background-color: #f9f1ee;
 }
 
+h1{
+    color: #354259;
+}
 body{
     font-family: 'Merriweather Sans', sans-serif;
+    background-color: #CCF3EE;
 }
 .done{
     opacity: 0.5;
@@ -17,4 +21,8 @@ body{
     display:none;
     padding: 2px;
     text-align: center;
+}
+hr{
+    background-color: darkblue;
+    opacity: 1;
 }
