@@ -36,7 +36,7 @@
                   </div>
               </div>
         </template>
-
+        <!-- afdlka -->
        
         <h1 class="text-primary">Жагсаалт</h1>
         <div class="lists">
@@ -81,10 +81,16 @@
             }
            }
            function EditTask(ids){
-            const edited = document.getElementById(ids);
-            let editedEl = edited.getElementsByClassName('card-body').innerHTML;
-            console.log(edited);
+            const editEl = document.getElementById(ids);
+            let editClass = editEl.getElementsByClassName('card-body')[0];
+            let editClassEl = editClass.innerHTML;
            }
+
+           // edit button
+           
+           
+
+
 
             // function Addlist(){
             //     let inputEl = document.getElementById('Input')
