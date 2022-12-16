@@ -32,4 +32,5 @@ body{
     color: #1C315E;
     cursor: pointer;
     border-radius: 6px solid #472183;
+    /* opacity: .5; */
 }
