@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    background-color: azure;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shirt{
+    width: 50%;
+    display: inline-block;
+}
+.product{
+    display: inline;
+    float: left;
+}
