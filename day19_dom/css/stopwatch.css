@@ -34,3 +34,8 @@ body{
     border-radius: 6px solid #472183;
     /* opacity: .5; */
 }
+.btns .active,
+.btns .stopActive{
+    opacity: .5;
+    cursor: not-allowed;
+}

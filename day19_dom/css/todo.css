@@ -12,7 +12,7 @@ body{
 .done{
     opacity: 0.5;
 }
-.done .input-group .taskField{
+.done .input-group .taskField{  
     text-decoration: line-through;
 }
 .editing {
