@@ -31,6 +31,6 @@ function selectBlue(){
     pick.getElementsByTagName('img')[0].classList.add('active')
     pick.getElementsByTagName('img')[1].classList.remove('active')
     pick.getElementsByTagName('img')[1].classList.add('disactive')
-    pick.getElementsByTagName('img')[1].classList.remove('active')
-    pick.getElementsByTagName('img')[1].classList.add('disactive')
+    pick.getElementsByTagName('img')[2].classList.remove('active')
+    pick.getElementsByTagName('img')[2].classList.add('disactive')
 }
