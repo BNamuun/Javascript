@@ -12,12 +12,73 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: aquamarine; */
 }
 .shirt{
-    width: 50%;
+    width: 70%;
     display: inline-block;
 }
 .product{
     display: inline;
     float: left;
+    margin-right: 50px;
+}
+.radio-box label{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: aquamarine;
+    margin-right: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.5 #fff;
+    position: relative;
+}
+
+
+.radio-box label:nth-child(1),
+.container .radio-box label.red,
+.container .radio-box input.red {
+    background-color: red; 
+}
+.radio-box label:nth-child(2),
+.container .radio-box label.green,
+.container .radio-box input.green {
+    background-color: green(255, 0, 200);
+}
+.radio-box label:nth-child(3),
+.container .radio-box label.blue,
+.container .radio-box input.blue {
+    background-color: blue;
+}
+.radio-box label:nth-child(4),
+.container .radio-box label.orange,
+.container .radio-box input.orange {
+    background-color: rgb(249, 167, 3);
+}
+
+.container .product .shirt::after{
+    content: '';
+    position: absolute;
+    background-color: green;
+    opacity: 0.5;
+    mix-blend-mode: hue;
+}
+.active{
+    border: 2px solid black;
+    transform: scale(1.3);
+}
+.container .radio-box label.active + input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    mix-blend-mode: hue;
+}
+.container img{
+    max-width: 300px;
+}
+input:checked ~ .product::after{
+    background-color: red;
 }
