@@ -27,7 +27,8 @@
 // console.log(array);
 
 // Duplicate counter
-let numbers =[1, 2, 3, 4, 3,  1]
+// let numbers =[1, 2, 3, 4, 3,  1]
+let numbers = '12343155'
 let numToTen = [1,2,3,4,5,6,7,8,9]
 let dublicated = 0;
 let count = 0;
@@ -40,10 +41,8 @@ for(let i = 0; i  <numToTen.length; i++)
             // dublicated = numbers[i]
             count +=1
         }
-        else{
-            count += 0;
-        }
-        console.log(`${numToTen[i]} : ${count} `);
     }
+    console.log(`${numToTen[i]} : ${count} `);
+    count = 0;
 }
 
