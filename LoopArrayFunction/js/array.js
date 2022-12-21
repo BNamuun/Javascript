@@ -31,16 +31,17 @@ let numbers =[1, 2, 3, 4, 3,  1]
 let numToTen = [1,2,3,4,5,6,7,8,9]
 let dublicated = 0;
 let count = 0;
-for(let i = 0; i  <numbers.length; i++)
+
+for(let i = 0; i  <numToTen.length; i++)
 {
     for(let j = 0; j < numbers.length ; j++)
     {
-        if(numbers[i] == numToTen[j]){
-            dublicated = numbers[i]
+        if(numToTen[i] == numbers[j]){
+            // dublicated = numbers[i]
             count +=1
         }
         else{
-            dublicated = 0;
+            count += 0;
         }
         console.log(`${numToTen[i]} : ${count} `);
     }
