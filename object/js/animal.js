@@ -17,3 +17,4 @@ let animal = [{type: "dog", sound: "woof", printSound: printSoundOfAnimal()},
     for(let i = 0; i < animal.length; i++){
         animal[i].printSound()
     }
+    
