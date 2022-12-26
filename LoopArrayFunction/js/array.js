@@ -52,25 +52,25 @@
 
 
 // Count word
-let input = prompt('Хайх үгээ оруулна уу: ')
-let data = ['Засгийн', 'газарт', '6.4', 'сая', 'тонн', 'нүүрс', 'алдагдсан',
- 'гэх', 'мэдээлэл', 'ирээгүй', 'байна.', 'Бодит', 'байдалд', 'ийм', 'их', 'хэмжээний', 
- 'нүүрс', 'алдагдсан', 'гэх', 'асуудал', 'эргэлзээтэй', 'байна.', 'Хууль', 'хяналтын', 
- 'байгууллага', 'хяналт', 'шалгалтын', 'ажил', 'явуулж', 'байна.'];
+// let input = prompt('Хайх үгээ оруулна уу: ')
+// let data = ['Засгийн', 'газарт', '6.4', 'сая', 'тонн', 'нүүрс', 'алдагдсан',
+//  'гэх', 'мэдээлэл', 'ирээгүй', 'байна.', 'Бодит', 'байдалд', 'ийм', 'их', 'хэмжээний', 
+//  'нүүрс', 'алдагдсан', 'гэх', 'асуудал', 'эргэлзээтэй', 'байна.', 'Хууль', 'хяналтын', 
+//  'байгууллага', 'хяналт', 'шалгалтын', 'ажил', 'явуулж', 'байна.'];
 
-input = input.toLowerCase();
-countWord = 0;
-for( let i = 0; i< data.length; i++){
-    if(input == data[i].toLowerCase()){
-        countWord++
-    }
-    // else{  ??????????????????????????????????????????????????????????????????????????????????
-    //     alert(`Таны хайсан ${input} үг олдсонгүй, дахин оролдоно уу!`)
-    //     break
-    // }
+// input = input.toLowerCase();
+// countWord = 0;
+// for( let i = 0; i< data.length; i++){
+//     if(input == data[i].toLowerCase()){
+//         countWord++
+//     }
+//     // else{  ??????????????????????????????????????????????????????????????????????????????????
+//     //     alert(`Таны хайсан ${input} үг олдсонгүй, дахин оролдоно уу!`)
+//     //     break
+//     // }
 
-}
-console.log(`${input} гэдэг үг ${countWord} ш байна.`);
+// }
+// console.log(`${input} гэдэг үг ${countWord} ш байна.`);
 
  
 
@@ -152,19 +152,28 @@ console.log(`${input} гэдэг үг ${countWord} ш байна.`);
 // console.log(arrayOfNumbers);
 
 
-// davhardsan utga 
+// // davhardsan utga 
 // let arr = [4, 2, 34, 4, 1, 12, 1, 4];
-// console.log(arr);
-// let count = 0;
+// let array = []
 // for( let i = 0; i < arr.length; i++){
-//     for( let j = i+1; j < arr.length-1; j++){
-//            if(arr[i] == arr[j]){
-//                 console.log(arr[i]);
+//     for( let j = i + 1; j < arr.length; j++){
+//            if(arr[i] === arr[j]){
+//                 let dublicated = false;
+
+//                 for(let k = 0; k < array.length; k++){
+//                     if(arr[i] === array[k]){
+//                         dublicated = true;
+//                     }
+//                 }
+//                 if(!dublicated){
+//                     array.push(arr[i])
+//                 }
 //             }
         
 //     }
     
 // }
+// console.log(array);
 
 
 

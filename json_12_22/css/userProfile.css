@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 700px;
+    position: relative;
+    border-radius: 15px 15px 15px 15px;
+    
+}
+.userProfile{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 300px;
+    width: 500px;
+    background-color: #82AAE3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.bottom{
+    height: 400px;
+    width: 500px;
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(190, 230, 244);
+    border-radius: 0px 0px 15px 15px;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 60px;
+    padding-left: 70px;
+}
+.container .bottom div::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 4);
+    display: inline-block;
+    margin-right: 20px;
+}
+.container .bottom div:nth-child(1)::after{
+    color: red;
+}
+
+.userProfile img{
+    position: absolute;
+    top: -50px;
+    left: 170px;
+    border-radius: 50%;
+    border: 8px solid white;
+}
