@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <div id="article"></div>
+    <script>
+         fetch('https://dummyjson.com/posts')
+         .then((res) => res.json())
+         .then((data) => {
+            // console.log(data.posts[0].title);
+            const artHtml = `<h1>${data.posts[1].title} </h1>
+            <div> 
+            ${data[1].body}    
+            </div>`;
+           document.getElementById('article').innerHTML = artHtml
+         })
+    </script>
+</body>
+</html>
