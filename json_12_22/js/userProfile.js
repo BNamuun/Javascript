@@ -43,7 +43,6 @@ fetch('https://randomuser.me/api')
     // create a location div
     let location =  document.createElement('div')
     let locationAdd = location.classList.add('location')
-    let locationAdd1 = location.classList.add('el3')
     console.log(location);
     location.innerHTML =  'Location'
     location.innerHTML += " - " + userInfo.results[0].location.country
@@ -53,7 +52,6 @@ fetch('https://randomuser.me/api')
         // create a address div
         let address =  document.createElement('div')
         let addressAdd = address.classList.add('address')
-        let addressAdd1 = address.classList.add('el2')
         console.log(address);
         address.innerHTML =  'address'
         address.innerHTML += " - " + userInfo.results[0].location.street.number
@@ -63,7 +61,6 @@ fetch('https://randomuser.me/api')
         // create a timezone div
         let timeZone =  document.createElement('div')
         let timeZoneAdd = timeZone.classList.add('timeZone')
-        let timeZoneAdd1 = timeZone.classList.add('el1')
         console.log(timeZone);
         timeZone.innerHTML =  'timeZone '
         timeZone.innerHTML += userInfo.results[0].location.timezone.offset
