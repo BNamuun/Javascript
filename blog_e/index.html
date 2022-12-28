@@ -7,11 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="article"></div>
     <script>
-
-        let jjj = '<li> oklkoklkok </li>';
-        let dd = jjj.join('')
-        console.log(typeof jjj);
+        const query = window.location.search;
+        const id = query.split('=')[1];
+        fetch(`https://dummyjson.com/posts/${id}`)
+        .then((res) => res.json())
+        .then((data) => {
+            const articleHtml = `<h1> ${data.title} </h1>
+            <div>
+                ${data.body}
+                </div>`;
+            document.getElementById('article').innerHTML = articleHtml
+        })
     </script>
 </body>
 </html>
