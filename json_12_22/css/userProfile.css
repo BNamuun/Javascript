@@ -16,7 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 500px;
-    height: 700px;
+    height: 80vh;
     position: relative;
     border-radius: 15px 15px 15px 15px;
     
@@ -25,7 +25,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 300px;
+    height: 40vh;
     width: 500px;
     background-color: #82AAE3;
     position: absolute;
@@ -39,7 +39,7 @@ body{
     
 }
 .bottom{
-    height: 400px;
+    height: 40vh;
     width: 500px;
     bottom: 0;
     position: absolute;
@@ -58,14 +58,17 @@ body{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: rgb(0, 0, 4);
+    /* color: red; */
+    background-color: #05b9f5;
     display: inline-block;
     margin-right: 20px;
 }
-.container .bottom div:nth-child(1)::after{
-    color: red;
+.container .bottom div:nth-child(1)::before{
+     background-color: #FF6E31;
 }
-
+.container .bottom div:nth-child(2)::before{
+     background-color: #FD8A8A;
+}
 .userProfile img{
     position: absolute;
     top: -50px;
