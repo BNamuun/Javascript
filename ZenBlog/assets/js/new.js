@@ -4,6 +4,7 @@ fetch('https://dummyjson.com/posts')
 .then((resp) => resp.json())
 .then((data) => {
     const filteredList = data.posts.filter((item, index) => index >= 0 && index < 5);
+    // console.log(filteredList[0]);
     const titleP = filteredList.map(item =>
        ` <div class="d-md-flex post-entry-2 half">
         <a href="single-post.html" class="me-4 thumbnail">
@@ -27,10 +28,10 @@ fetch('https://dummyjson.com/posts')
 fetch('https://jsonplaceholder.typicode.com/photos')
 .then((resp) => resp.json())
 .then((photoUrl) =>{
-    // console.log(photoUrl[0].url);
-    const filteredPhoto = photoUrl.filter((item1, index1) => index1 >= 0 && index1 < 5);
-    const photoPath = filteredPhoto.url.map(item2 =>{
-        console.log(photoPath);
-    })
+    console.log(photoUrl[0].url);
+    // const filteredPhoto = photoUrl.filter((item1, index1) => index1 >= 0 && index1 < 5);
+    // const photoPath = filteredPhoto.url.map(item2 =>{
+    //     console.log(photoPath);
+    // })
 
 })
