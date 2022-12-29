@@ -19,6 +19,7 @@
         const query = window.location.search;
         const page = Number(query.split('=')[1]);
         const size = 5;
+        console.log(page)
         fetch('https://dummyjson.com/posts')
         .then((resp) => resp.json())
         .then((data) =>{
