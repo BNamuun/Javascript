@@ -1,5 +1,8 @@
 indexVal = []
-DateTime = []
+const DateTime = []
+const dateP = []
+const Po =[]
+const TimeP = []
 const loadCharacters = async () => {
     try {
         const res = await fetch('https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json#')
@@ -11,21 +14,22 @@ const loadCharacters = async () => {
         indexVal.shift();
         console.log({indexVal})
         const ctx = document.getElementById('myChart');
-const dataV = []
+        
         data.map(item1 =>
             // cosnt DateVal =  DateTime.push((item)[0])
             DateTime.push((item1)[0]))
             DateTime.shift();
-            console.log({datav}) 
-    
-
-        new Chart(ctx, {
-            type: 'bar',
+            DateTime.slice(11,15);
+            // Po.push(new Date(dateP));
+            // dateP.push(DateTime.getHours() + ':' + DateTime.getMinutes());
+            
+            new Chart(ctx, {
+                type: 'bar',
             data: {
-                labels: indexVal,
+                labels: DateTime.slice(-10),
                 datasets: [{
-                    label: '# of Votes',
-                    data: indexVal,
+                    label: 'Kp index',
+                    data: indexVal.slice(-10),
                     borderWidth: 2
                 }]
             },
@@ -37,13 +41,12 @@ const dataV = []
                 }
             }
         });
-
+        
     } catch (err) {
         console.log(err);
     }
 };
 
 
-
-
+//  console.log({nom}) 
 loadCharacters()
