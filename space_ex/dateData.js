@@ -6,10 +6,18 @@ const loadCharacters = async () => {
         let data = await res.json();
         // console.log(data);
         data.map(item =>
+        // cosnt DateVal =  DateTime.push((item)[0])
         indexVal.push((item)[1]))
         indexVal.shift();
         console.log({indexVal})
         const ctx = document.getElementById('myChart');
+const dataV = []
+        data.map(item1 =>
+            // cosnt DateVal =  DateTime.push((item)[0])
+            DateTime.push((item1)[0]))
+            DateTime.shift();
+            console.log({datav}) 
+    
 
         new Chart(ctx, {
             type: 'bar',
